@@ -38,7 +38,7 @@ public class ABot extends AbilityBot{
 	public void sendCustomKeyboard(String chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId);
-        message.setText("Bienvenido a stujects, selecciona una opcion del menú");
+        message.setText("Bienvenido a stujects, selecciona una opcion del menÃº");
 
         // Create ReplyKeyboardMarkup object
         ReplyKeyboardMarkup keyboardMarkup = new ReplyKeyboardMarkup();
@@ -72,8 +72,8 @@ public class ABot extends AbilityBot{
 	
 	
 
-	public static String BOT_TOKEN = "470857291:AAERwxEJ7fAbvoPLTkEnqxxoeRnhpeb7UHY";
-	public static String BOT_USERNAME = "Stujects_bot";
+	public static String BOT_TOKEN = "API_KEY";
+	public static String BOT_USERNAME = "USERNAME";
 	
 	public ABot() {
 		super(BOT_TOKEN, BOT_USERNAME);
@@ -175,7 +175,7 @@ public Ability nuevoproyecto() {
     				
     			listmap.put(proyecto.userId, "Proyecto de: "+proyecto.user+". Nombre: "+proyecto.nameproj+". Descripcion: "+proyecto.descproj);
     			
-    			silent.send("Proyecto creado con éxito", upd.getMessage().getChatId());
+    			silent.send("Proyecto creado con Ã©xito", upd.getMessage().getChatId());
     			sendCustomKeyboard(String.valueOf(upd.getMessage().getChatId()));
     			},
     			Flag.MESSAGE,
